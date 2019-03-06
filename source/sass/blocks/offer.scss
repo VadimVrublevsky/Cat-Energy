@@ -1,0 +1,76 @@
+@import "variables.scss";
+.offer {
+
+}
+.offer__container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.offer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.offer__list-item {
+  position: relative;
+  margin-top: 22px;
+  background-color: $lightGrey;
+  &:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+.offer__list-title {
+  margin: 0;
+  padding: 0;
+  padding-left: 92px;
+  padding-top: 25px;
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: $almostBlack;
+  &--slim {
+
+  }
+  &--pro {
+
+  }
+}
+.offer__list-text {
+  margin: 0;
+  margin-top: 32px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: $darkGrey;
+}
+.offer__list-link-container {
+  position: relative;
+  width: 240px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid $grey;
+}
+.offer__list-link {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+

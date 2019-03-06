@@ -1,0 +1,21 @@
+@import "variables.scss";
+.html-academy-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.html-academy-list__item {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.html-academy-list__link {
+  font-family: $arial;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: $darkGrey;
+}
+.html-academy-list__logo {
+
+}

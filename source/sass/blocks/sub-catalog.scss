@@ -1,0 +1,47 @@
+@import "variables.scss";
+.sub-catalog {
+  width: 320px;
+}
+.sub-catalog__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-top: 30px;
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: lighter;
+  color: $almostBlack;
+}
+.sub-catalog__container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub-catalog__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  list-style: none;
+}
+.sub-catalog__offer-container {
+  width: 280px;
+  height: 290px;
+  text-align: center;
+  background-image: url("../img/rastr/sub-catalog__bg-m.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.sub-catalog__offer-image {
+  margin-top: 65px;
+}
+.sub-catalog__offer-text {
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  font-family: $arial;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: lighter;
+  color: $white;
+}

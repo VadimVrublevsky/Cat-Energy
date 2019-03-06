@@ -1,0 +1,25 @@
+@import "variables.scss";
+.catalog {
+  width: 320px;
+}
+.catalog__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: lighter;
+  color: $almostBlack;
+  border-bottom: 1px solid $grey;
+}
+.catalog__container {
+
+}
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

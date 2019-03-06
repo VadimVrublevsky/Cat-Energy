@@ -1,0 +1,45 @@
+@import "variables.scss";
+.contacts {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+.contacts__container {
+  display: flex;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contacts__invite {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: $almostBlack;
+}
+.contacts__address {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: lighter;
+  color: $darkGrey;
+}
+.contacts__map {
+  position: relative;
+  height: 362px;
+  background-image: url("../img/rastr/contacts__map.jpg");
+}
+.contacts__pin {
+  position: absolute;
+  top: 177px;
+  left: 135px;
+}

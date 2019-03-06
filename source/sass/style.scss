@@ -1,0 +1,65 @@
+@import "variables.scss";
+body {
+  padding: 0;
+  width: 320px;
+  font-family: 'Oswald', 'Arial', sans-serif;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+  width: 280px;
+  height: 40px;
+  background-color: $green;
+  border: none;
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+}
+textarea[placeholder] {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: $darkGrey;
+  text-transform: uppercase;
+}
+// Index
+@import "blocks/header-page.scss";
+@import "blocks/header-nav.scss";
+@import "blocks/main-page.scss";
+@import "blocks/product.scss";
+@import "blocks/offer.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/picture.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer-page.scss";
+@import "blocks/social-list.scss";
+@import "blocks/html-academy-list.scss";
+// Catalog
+@import "blocks/catalog-page.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-list.scss";
+@import "blocks/sub-catalog.scss";
+@import "blocks/sub-catalog-list.scss";
+// Form
+@import "blocks/form-page.scss";
+@import "blocks/form.scss";
+@import "blocks/field.scss";

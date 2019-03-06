@@ -1,0 +1,31 @@
+@import "variables.scss";
+.picture {
+  position: relative;
+}
+.picture__before {
+  position: absolute;
+}
+.picture__after {
+
+}
+.picture__slider {
+  margin-top: 40px;
+  text-align: center;
+}
+.picture__slider-status {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: $almostBlack;
+  &--before {
+    margin-right: 20px;
+  }
+  &--after {
+    margin-left: 20px;
+  }
+}
+.picture__bar {
+  width: 84px;
+}

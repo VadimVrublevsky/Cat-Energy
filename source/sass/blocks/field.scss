@@ -1,0 +1,153 @@
+@import "variables.scss";
+.field {
+
+}
+.field__personal-data-cat-container {
+  width: 320px;
+  border-bottom: 1px solid $grey;
+}
+.field__personal-data-cat {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.field__label {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: $darkGrey;
+  text-transform: uppercase;
+  &--position {
+    margin-bottom: 15px;
+  }
+}
+.field__text {
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: $darkGrey;
+  text-transform: uppercase;
+  &--name {
+    width: 201px;
+  }
+  &--weight {
+    width: 182px;
+  }
+  &--age {
+    width: 147px;
+  }
+  &--email {
+    width: 193px;
+  }
+  &--phone {
+    width: 171px;
+  }
+  &--left {
+    margin-left: 15px;
+  }
+  &--right {
+    margin-right: 15px;
+  }
+}
+.field__nutrition-program-container {
+  width: 320px;
+  border-bottom: 1px solid $grey;
+}
+.field__nutrition-program {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.field__radio {
+
+}
+.field__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: lighter;
+  color: $almostBlack;
+}
+.field__personal-data-owner-container {
+  width: 320px;
+}
+.field__personal-data-owner {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.field__comments-container {
+  width: 320px;
+}
+.field__comments {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.field__textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  height: 150px;
+  width: 280px;
+}
+.field__additionally-container {
+  width: 320px;
+  margin-bottom: 30px;
+}
+.field__additionally {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.field__checkbox {
+
+}
+.field__submit-container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.field__submit {
+  font-size: 16px;
+  line-height: 20px;
+}
+.field__text-required {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: lighter;
+  color: $darkGrey;
+  text-align: center;
+}

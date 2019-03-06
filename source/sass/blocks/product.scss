@@ -1,0 +1,41 @@
+@import "variables.scss";
+.product {
+  min-height: 437px;
+  background-image: url('../img/rastr/product__background.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.product__container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: lighter;
+  text-align: center;
+  color: $white;
+}
+.product__tagline {
+  margin: 0;
+  margin-top: 22px;
+  padding: 0;
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+}
+.product__image {
+  margin-top: 30px;
+}
+.product__link {
+
+}

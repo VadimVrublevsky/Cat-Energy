@@ -1,0 +1,83 @@
+@import "variables.scss";
+.example {
+  margin-top: 40px;
+  background-color: $lightGrey;
+}
+.example__container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.example__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: lighter;
+  color: $almostBlack;
+}
+.example__text {
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: $darkGrey;
+}
+.example__result {
+
+}
+.example__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  justify-content: space-between;
+}
+.example__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 124px;
+}
+.example__value {
+  margin: 0;
+  padding: 0;
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: $almostBlack;
+}
+.example__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: lighter;
+  color: $darkGrey;
+}
+.example__cost {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: $almostBlack;
+}
+.example__picture {
+  margin-top: 30px;
+  padding-bottom: 40px;
+}

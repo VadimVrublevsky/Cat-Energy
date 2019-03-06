@@ -1,0 +1,30 @@
+@import "variables.scss";
+.footer-page {
+  width: 320px;
+}
+.footer-page__container {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-page__logo {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $grey;
+  text-align: center;
+}
+.footer-page__link {
+
+}
+.footer-page__image {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer-page__social {
+  margin: 0;
+  padding: 0;
+}
+.footer-page__html-academy {
+  margin: 0;
+  padding: 0;
+}

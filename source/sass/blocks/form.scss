@@ -1,0 +1,30 @@
+@import "variables.scss";
+.form {
+
+}
+.form__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: lighter;
+  color: $almostBlack;
+}
+.form__annotation {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-top: 30px;
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: $darkGrey;
+  text-transform: uppercase;
+}
+.form__fields {
+  margin-top: 20px;
+}

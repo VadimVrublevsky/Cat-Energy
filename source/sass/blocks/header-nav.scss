@@ -1,0 +1,30 @@
+@import "variables.scss";
+.header-nav {
+  // display: none;
+  width: 320px;
+  min-height: 200px;
+}
+.header-nav__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header-nav__item {
+  min-height: 66px;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid $grey;
+  &--active {
+
+  }
+}
+.header-nav__link-container {
+  text-align: center;
+}
+.header-nav__link {
+  color: $almostBlack;
+  text-decoration: none;
+}
