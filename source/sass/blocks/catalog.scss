@@ -1,13 +1,15 @@
 @import "variables.scss";
+// Mobile version
 .catalog {
-  width: 320px;
+
 }
 .catalog__title {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 20px;
-  padding-bottom: 30px;
+  padding-right: 20px;
   font-family: $oswald;
   font-size: 36px;
   line-height: 60px;
@@ -16,10 +18,51 @@
   border-bottom: 1px solid $grey;
 }
 .catalog__container {
-
+  margin-top: 30px;
 }
 .catalog__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+// Tablet version
+@media (min-width: $tablet-width) {
+  .catalog {
+
+  }
+  .catalog__title {
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 60px;
+    border-bottom: none;
+  }
+  .catalog__container {
+    width: 708px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalog__list {
+
+  }
+}
+
+// Desktop version
+@media (min-width: $desktop-width) {
+  .catalog {
+
+  }
+  .catalog__title {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 70px;
+  }
+  .catalog__container {
+    width: 1220px;
+  }
+  .catalog__list {
+
+  }
 }

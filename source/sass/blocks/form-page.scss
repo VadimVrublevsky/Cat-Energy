@@ -1,4 +1,19 @@
 @import "variables.scss";
+// Mobile version
 .form-page {
   width: 320px;
+}
+
+// Tablet version
+@media (min-width: $tablet-width) {
+  .form-page {
+    width: 768px;
+  }
+}
+
+// Desktop version
+@media (min-width: $desktop-width) {
+  .form-page {
+    width: 1440px;
+  }
 }

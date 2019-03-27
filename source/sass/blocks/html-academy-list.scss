@@ -1,8 +1,10 @@
 @import "variables.scss";
+// Mobile version
 .html-academy-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .html-academy-list__item {
   margin-top: 20px;
@@ -18,4 +20,39 @@
 }
 .html-academy-list__logo {
 
+}
+
+// Tablet version
+@media (min-width: $tablet-width) {
+  .html-academy-list {
+    width: 172px;
+  }
+  .html-academy-list__item {
+    margin: 0;
+    &:nth-child(2) {
+      margin-left: 25px;
+    }
+  }
+  .html-academy-list__link {
+
+  }
+  .html-academy-list__logo {
+    margin-top: 8px;
+  }
+}
+
+// Desktop version
+@media (min-width: $desktop-width) {
+  .html-academy-list {
+
+  }
+  .html-academy-list__item {
+
+  }
+  .html-academy-list__link {
+
+  }
+  .html-academy-list__logo {
+
+  }
 }

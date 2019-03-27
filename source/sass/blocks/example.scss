@@ -1,4 +1,5 @@
 @import "variables.scss";
+// Mobile version
 .example {
   margin-top: 40px;
   background-color: $lightGrey;
@@ -33,11 +34,11 @@
 }
 .example__list {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   text-align: center;
   list-style: none;
-  justify-content: space-between;
 }
 .example__item {
   display: flex;
@@ -46,8 +47,6 @@
   width: 124px;
 }
 .example__value {
-  margin: 0;
-  padding: 0;
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
@@ -56,8 +55,6 @@
   color: $almostBlack;
 }
 .example__description {
-  margin: 0;
-  padding: 0;
   margin-top: 10px;
   font-family: $arial;
   font-size: 12px;
@@ -67,7 +64,6 @@
 }
 .example__cost {
   margin: 0;
-  padding: 0;
   margin-top: 20px;
   text-align: center;
   font-family: $oswald;
@@ -80,4 +76,109 @@
 .example__picture {
   margin-top: 30px;
   padding-bottom: 40px;
+}
+
+// Tablet version
+@media (min-width: $tablet-width) {
+  .example {
+    width: 768px;
+    margin-top: 0;
+    background-color: $white;
+  }
+  .example__container {
+    width: 708px;
+  }
+  .example__title {
+    padding-top: 50px;
+    font-size: 60px;
+  }
+  .example__text {
+    margin-top: 70px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .example__result {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+  }
+  .example__list {
+
+  }
+  .example__item {
+    margin-top: 0;
+    width: 192px;
+  }
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .example__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .example__cost {
+    width: 192px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    line-height: 30px;
+    align-self: center;
+    text-align: right;
+  }
+  .example__picture {
+    padding-bottom: 0;
+  }
+}
+
+// Desktop version
+@media (min-width: $desktop-width) {
+  .example {
+    width: 1440px;
+    margin-top: 30px;
+    background-color: $lightGrey;
+  }
+  .example__container {
+    width: 1300px;
+    display: flex;
+  }
+  .example__box {
+    width: 650px;
+    margin-left: 40px;
+  }
+  .example__title {
+    padding-top: 55px;
+    margin-right: 190px;
+  }
+  .example__text {
+    margin-top: 135px;
+    margin-right: 190px;
+  }
+  .example__result {
+    display: block;
+    margin-top: 75px;
+    margin-right: 190px;
+  }
+  .example__list {
+    justify-content: flex-start;
+  }
+  .example__item {
+
+  }
+  .example__value {
+
+  }
+  .example__description {
+
+  }
+  .example__cost {
+    margin-top: 60px;
+    text-align: left;
+    width: auto;
+  }
+  .example__price {
+    margin-left: 70px;
+  }
+  .example__picture {
+  }
 }

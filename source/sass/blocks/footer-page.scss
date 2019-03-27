@@ -1,6 +1,8 @@
 @import "variables.scss";
+// Mobile version
 .footer-page {
   width: 320px;
+  background-color: $lightGrey;
 }
 .footer-page__container {
   width: 280px;
@@ -27,4 +29,61 @@
 .footer-page__html-academy {
   margin: 0;
   padding: 0;
+}
+
+// Tablet version
+@media (min-width: $tablet-width) {
+  .footer-page {
+    width: 768px;
+  }
+  .footer-page__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer-page__logo {
+    width: 162px;
+    border-bottom: none;
+  }
+  .footer-page__link {
+
+  }
+  .footer-page__image {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .footer-page__social {
+
+  }
+  .footer-page__html-academy {
+
+  }
+}
+
+// Desktop version
+@media (min-width: $desktop-width) {
+  .footer-page {
+    width: 1440px;
+  }
+  .footer-page__container {
+    width: 1220px;
+  }
+  .footer-page__logo {
+
+  }
+  .footer-page__link {
+
+  }
+  .footer-page__image {
+
+  }
+  .footer-page__social {
+
+  }
+  .footer-page__html-academy {
+
+  }
 }

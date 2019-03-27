@@ -1,4 +1,19 @@
 @import "variables.scss";
+// Mobile version
 .main-page {
+  width: 320px;
+}
 
+// Tablet version
+@media (min-width: $tablet-width) {
+  .main-page {
+    width: 768px;
+  }
+}
+
+// Desktop version
+@media (min-width: $desktop-width) {
+  .main-page {
+    width: 1440px;
+  }
 }

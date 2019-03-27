@@ -1,4 +1,19 @@
 @import "variables.scss";
+// Mobile version
 .catalog-page {
+  width: 320px;
+}
 
+// Tablet version
+@media (min-width: $tablet-width) {
+  .catalog-page {
+    width: 768px;
+  }
+}
+
+// Desktop version
+@media (min-width: $desktop-width) {
+  .catalog-page {
+    width: 1440px;
+  }
 }

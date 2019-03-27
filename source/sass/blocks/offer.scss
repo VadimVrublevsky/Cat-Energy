@@ -1,6 +1,7 @@
 @import "variables.scss";
+// Mobile version
 .offer {
-
+  margin-top: 22px;
 }
 .offer__container {
   width: 280px;
@@ -14,16 +15,18 @@
 }
 .offer__list-item {
   position: relative;
-  margin-top: 22px;
   background-color: $lightGrey;
-  &:nth-child(2) {
+
+
+  &:last-child {
     margin-top: 20px;
   }
 }
 .offer__list-title {
   margin: 0;
   padding: 0;
-  padding-left: 92px;
+  margin-left: 90px;
+  margin-right: 20px;
   padding-top: 25px;
   font-family: $oswald;
   font-size: 24px;
@@ -40,15 +43,18 @@
 }
 .offer__list-text {
   margin: 0;
-  margin-top: 32px;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 32px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
   font-weight: lighter;
   color: $darkGrey;
+  &--pro {
+
+  }
 }
 .offer__list-link-container {
   position: relative;
@@ -73,4 +79,100 @@
   text-transform: uppercase;
 }
 
+// Tablet version
+@media (min-width: $tablet-width) {
+  .offer {
+    width: 768px;
+  }
+  .offer__container {
+    width: 708px;
+  }
+  .offer__list {
 
+  }
+  .offer__list-item {
+
+    &:last-child {
+
+    }
+  }
+  .offer__list-title {
+    padding-top: 60px;
+    margin-left: 55px;
+    font-size: 36px;
+    line-height: 36px;
+    &--slim {
+      margin-right: 265px;
+    }
+    &--pro {
+      margin-right: 305px;
+    }
+  }
+  .offer__list-text {
+    margin-left: 55px;
+    font-size: 16px;
+    line-height: 24px;
+    &--slim {
+      margin-right: 265px;
+    }
+    &--pro {
+      margin-right: 305px;
+    }
+  }
+  .offer__list-link-container {
+    margin: 0;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    border: none;
+  }
+  .offer__list-link {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+// Desktop version
+@media (min-width: $desktop-width) {
+  .offer {
+    width: 1440px;
+    margin-top: 80px;
+  }
+  .offer__container {
+    width: 1220px;
+  }
+  .offer__list {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .offer__list-item {
+    width: 570px;
+
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+  .offer__list-title {
+    margin-left: 217px;
+    margin-right: 50px;
+    &--slim {
+
+    }
+    &--pro {
+
+    }
+  }
+  .offer__list-text {
+    margin-top: 80px;
+    margin-right: 50px;
+  }
+  .offer__list-link-container {
+    margin-top: 40px;
+  }
+  .offer__list-link {
+
+  }
+}

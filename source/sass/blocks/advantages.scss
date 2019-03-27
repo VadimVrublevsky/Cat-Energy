@@ -1,6 +1,8 @@
 @import "variables.scss";
+// Mobile version
 .advantages {
-
+  width: 320px;
+  margin-top: 20px;
 }
 .advantages__container {
   width: 280px;
@@ -10,7 +12,6 @@
 .advantages__title {
   margin: 0;
   padding: 0;
-  padding-top: 20px;
   font-family: $oswald;
   font-size: 36px;
   line-height: 60px;
@@ -35,7 +36,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25%;
+  padding-top: 25%;
 }
 .advantages__text {
   margin: 0;
@@ -47,4 +48,107 @@
   line-height: 18px;
   font-weight: lighter;
   color: $darkGrey;
+}
+
+// Tablet version
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 768px;
+    margin-top: 40px;
+    border-bottom: 1px solid $grey;
+  }
+  .advantages__container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 708px;
+  }
+  .advantages__title {
+    font-size: 60px;
+  }
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .advantages__items-container {
+    display: block;
+    margin-top: 60px;
+    width: 324px;
+    background-repeat: no-repeat;
+    background-position: 60% 0;
+    &--first {
+      background-image: url('../img/rastr/advantages__1-t|d.png');
+      background-position: 50% 0;
+    }
+    &--second {
+      background-image: url('../img/rastr/advantages__2-t|d.png');
+    }
+    &--third {
+      background-image: url('../img/rastr/advantages__3-t|d.png');
+      margin-top: 90px;
+      margin-bottom: 60px;
+    }
+    &--fourth {
+      background-image: url('../img/rastr/advantages__4-t|d.png');
+      margin-top: 90px;
+      margin-bottom: 60px;
+    }
+  }
+  .advantages__picture-container {
+    width: 80px;
+    height: 80px;
+  }
+  .advantages__picture {
+    padding-top: 30%;
+  }
+  .advantages__text {
+    width: 245px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+// Desktop version
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1440px;
+    margin-top: 80px;
+    border-bottom: none;
+  }
+  .advantages__container {
+    width: 1220px;
+  }
+  .advantages__title {
+  }
+  .advantages__list {
+    flex-wrap: no-wrap;
+  }
+  .advantages__items-container {
+    width: 245px;
+    margin-top: 75px;
+    background-position: 90% 0;
+    &--first {
+      background-position: 70% 0;
+    }
+    &--second {
+
+    }
+    &--third {
+      margin-bottom: 0;
+    }
+    &--fourth {
+      margin-bottom: 0;
+    }
+  }
+  .advantages__picture-container {
+
+  }
+  .advantages__picture {
+
+  }
+  .advantages__text {
+
+  }
 }

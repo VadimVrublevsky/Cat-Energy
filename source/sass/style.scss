@@ -1,8 +1,21 @@
 @import "variables.scss";
 body {
   padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 320px;
   font-family: 'Oswald', 'Arial', sans-serif;
+}
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+@media (min-width: $desktop-width) {
+  body {
+    width: 1440px;
+  }
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -62,4 +75,3 @@ textarea[placeholder] {
 // Form
 @import "blocks/form-page.scss";
 @import "blocks/form.scss";
-@import "blocks/field.scss";
