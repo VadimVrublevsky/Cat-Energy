@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1">
     <title>Cat Energy - Анкета для подбора программы</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,7 +14,11 @@
       <div class="header-page__container">
         <p class="header-page__logo">
           <a class="header-page__link" href="index.html">
-            <img class="header-page__image header-page__image--face" src="img/vector/header__logo-m.svg" width="33" height="38" alt="Cat-Energy">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/vector/header__logo-d.svg">
+              <source media="(min-width: 768px)" srcset="img/vector/header__logo-t.svg">
+              <img class="header-page__image header-page__image--face" src="img/vector/header__logo-m.svg" width="33" height="38" alt="Cat-Energy">
+            </picture>
           </a>
         </p>
         <p class="header-page__logo">
@@ -45,75 +51,79 @@
       <section class="form">
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__annotation">Заполните анкету и мы подберем</br>программу питания для вашего кота</p>
-        <form class="form__fields field" method="post" action="https://echo.htmlacademy.ru" name="Подбор программы">
-          <div class="field__personal-data-cat-container">
-            <div class="field__personal-data-cat">
-              <label class="field__label field__label--position">Имя:<sup>*</sup>
-                <input class="field__text field__text--name field__text--left" type="text" name="Имя" placeholder="Барсик" required>
+        <form class="form__fields" method="post" action="https://echo.htmlacademy.ru" name="Подбор программы">
+          <div class="form__program-container">
+            <div class="form__personal-data-cat-container">
+              <div class="form__personal-data-cat">
+                <label class="form__label form__label--name">Имя:<sup>*</sup>
+                  <input class="form__text form__text--name form__text--left" type="text" name="Имя" placeholder="Барсик" required>
+                </label>
+                <label class="form__label form__label--weight">Вес(КГ):<sup>*</sup>
+                  <input class="form__text form__text--weight form__text--left"  type="text" name="Вес" placeholder="7" required pattern="[0-9]{1,2}">
+                </label>
+                <label class="form__label form__label--age">Возраст(лет):
+                  <input class="form__text form__text--age form__text--left" type="text" name="Возраст" placeholder="7" pattern="[0-9]{1,2}">
+                </label>
+              </div>
+            </div>
+            <div class="form__nutrition-program-container">
+              <div class="form__nutrition-program">
+                <label class="form__label">
+                  <input class="form__radio form__text--right" type="radio" name="Программа" value="Похудение" checked>Похудение
+                </label>
+                <label class="form__label">
+                  <input class="form__radio form__text--right" type="radio" name="Программа" value="Набор массы">Набор массы
+                </label>
+                <label class="form__label">
+                  <input class="form__radio form__text--right" type="radio" name="Программа" value="Нужен совет">Не знаю (нужен ваш совет)
+                </label>
+              </div>
+            </div>
+          </div>
+          <h3 class="form__subtitle">Контактные данные (владельца кота)</h3>
+          <div class="form__personal-data-owner-container">
+            <div class="form__personal-data-owner">
+              <label class="form__label form__label--data-owner">email:<sup>*</sup>
+                <input class="form__text form__text--email form__text--left" type="email" name="Е-мейл" placeholder="Kuklachev@gmail.com" required>
               </label>
-              <label class="field__label field__label--position">Вес(КГ):<sup>*</sup>
-                <input class="field__text field__text--weight field__text--left"  type="text" name="Вес" placeholder="7" required pattern="[0-9]{1,2}">
-              </label>
-              <label class="field__label">Возраст(лет):
-                <input class="field__text field__text--age field__text--left" type="text" name="Возраст" placeholder="7" pattern="[0-9]{1,2}">
+              <label class="form__label form__label--data-owner">Телефон:<sup>*</sup>
+                <input class="form__text form__text--phone form__text--left" type="text" name="Номер телефона" placeholder="8(960)900-60-90" required>
               </label>
             </div>
           </div>
-          <div class="field__nutrition-program-container">
-            <div class="field__nutrition-program">
-              <label class="field__label field__label--position">
-                <input class="field__radio field__text--right" type="radio" name="Программа" value="Похудение" checked>Похудение
+          <h3 class="form__subtitle">Комментарий</h3>
+          <div class="form__comments-container">
+            <div class="form__comments">
+              <textarea class="form__textarea" name="Комментарий" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </div>
+          <h3 class="form__subtitle">Дополнительно</h3>
+          <div class="form__additionally-container">
+            <div class="form__additionally">
+              <label class="form__label form__label--checkbox">
+                <input class="form__checkbox form__text--right" type="checkbox"name="Сахарозаменитель">Сахарозаменитель
               </label>
-              <label class="field__label field__label--position">
-                <input class="field__radio field__text--right" type="radio" name="Программа" value="Набор массы">Набор массы
+              <label class="form__label form__label--checkbox">
+                <input class="form__checkbox form__text--right" type="checkbox" name="Питьевая вода">Питьевая вода
               </label>
-              <label class="field__label">
-                <input class="field__radio field__text--right" type="radio" name="Программа" value="Нужен совет">Не знаю (нужен ваш совет)
+              <label class="form__label form__label--checkbox">
+                <input class="form__checkbox form__text--right" type="checkbox" name="Молоко">Молоко
+              </label>
+              <label class="form__label form__label--checkbox">
+                <input class="form__checkbox form__text--right" type="checkbox"name="Витамины">Витамины
               </label>
             </div>
           </div>
-          <h3 class="field__title">Контактные данные</br> (владельца кота)</h3>
-          <div class="field__personal-data-owner-container">
-            <div class="field__personal-data-owner">
-              <label class="field__label field__label--position">email:<sup>*</sup>
-                <input class="field__text field__text--email field__text--left" type="email" name="Е-мейл" placeholder="Kuklachev@gmail.com" required>
-              </label>
-              <label class="field__label">Телефон:<sup>*</sup>
-                <input class="field__text field__text--phone field__text--left" type="text" name="Номер телефона" placeholder="8(960)900-60-90" required>
-              </label>
+          <div class="form__submit-container">
+            <div class="form__submit">
+              <input class="form__submit-button button" type="submit" value="Отправить заявку">
+              <p class="form__text-required"><sup>*</sup> - Обязательные поля</p>
             </div>
-          </div>
-          <h3 class="field__title">Комментарий</h3>
-          <div class="field__comments-container">
-            <div class="field__comments">
-              <textarea class="field__textarea" name="Комментарий" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
-          </div>
-          <h3 class="field__title">Дополнительно</h3>
-          <div class="field__additionally-container">
-            <div class="field__additionally">
-              <label class="field__label field__label--position">
-                <input class="field__checkbox field__text--right" type="checkbox"name="Сахарозаменитель">Сахарозаменитель
-              </label>
-              <label class="field__label field__label--position">
-                <input class="field__checkbox field__text--right" type="checkbox" name="Питьевая вода">Питьевая вода
-              </label>
-              <label class="field__label field__label--position">
-                <input class="field__checkbox field__text--right" type="checkbox" name="Молоко">Молоко
-              </label>
-              <label class="field__label">
-                <input class="field__checkbox field__text--right" type="checkbox"name="Витамины">Витамины
-              </label>
-            </div>
-          </div>
-          <div class="field__submit-container">
-            <input class="field__submit button" type="submit" value="Отправить заявку">
-            <p class="field__text-required"><sup>*</sup> - Обязательные поля</p>
           </div>
         </form>
       </section>
 
-      <section class="contacts">
+      <section class="contacts contacts--bgc">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__container">
           <p class="contacts__invite">Приглашаем</br>к сотруничеству дилеров!</p>
