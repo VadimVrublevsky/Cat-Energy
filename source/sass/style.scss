@@ -1,58 +1,5 @@
 @import "variables.scss";
-body {
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  font-family: 'Oswald', 'Arial', sans-serif;
-}
-@media (min-width: $tablet-width) {
-  body {
-    width: 768px;
-  }
-}
-@media (min-width: $desktop-width) {
-  body {
-    width: 1440px;
-  }
-}
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-.button {
-  width: 280px;
-  height: 40px;
-  background-color: $green;
-  border: none;
-  font-family: $oswald;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: lighter;
-  text-align: center;
-  text-transform: uppercase;
-  color: $white;
-  cursor: pointer;
-}
-textarea[placeholder] {
-  font-family: $oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: lighter;
-  color: $darkGrey;
-  text-transform: uppercase;
-}
+@import "scaffolding.scss";
 // Index
 @import "blocks/header-page.scss";
 @import "blocks/header-nav.scss";

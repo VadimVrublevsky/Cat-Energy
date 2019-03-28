@@ -12,7 +12,7 @@
   font-family: $oswald;
   font-size: 36px;
   line-height: 60px;
-  font-weight: lighter;
+  font-weight: normal;
   color: $almostBlack;
 }
 .form__annotation {
@@ -24,7 +24,7 @@
   font-family: $oswald;
   font-size: 14px;
   line-height: 18px;
-  font-weight: lighter;
+  font-weight: normal;
   color: $darkGrey;
   text-transform: uppercase;
 }
@@ -49,7 +49,7 @@
   font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
-  font-weight: lighter;
+  font-weight: normal;
   color: $darkGrey;
   text-transform: uppercase;
   &:first-child {
@@ -72,7 +72,7 @@
   font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
-  font-weight: lighter;
+  font-weight: normal;
   color: $darkGrey;
   text-transform: uppercase;
   &--name {
@@ -121,7 +121,7 @@
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
-  font-weight: lighter;
+  font-weight: normal;
   color: $almostBlack;
 }
 .form__personal-data-owner-container {
@@ -182,7 +182,7 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 16px;
-  font-weight: lighter;
+  font-weight: normal;
   color: $darkGrey;
   text-align: center;
 }
