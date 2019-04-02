@@ -3,13 +3,12 @@
   &--bgc {
       background-color: $lightGrey;
   }
-  width: 320px;
-  margin: 0;
-  padding: 0;
+
 }
 .contacts__container {
   display: flex;
-  width: 280px;
+  justify-content: space-between;
+  width: 87.5%; //280px
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
@@ -18,7 +17,7 @@
 .contacts__invite {
   margin: 0;
   padding: 0;
-  width: 160px;
+  width: 140px;
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
@@ -29,7 +28,7 @@
 .contacts__address {
   margin: 0;
   padding: 0;
-  width: 150px;
+  width: 140px;
   font-family: $arial;
   font-size: 14px;
   line-height: 20px;
@@ -38,37 +37,40 @@
 }
 .contacts__map {
   position: relative;
-  height: 362px;
-  background-image: url("../img/rastr/contacts__map.jpg");
+  width: 100%;
+  min-height: 362px;
+  background-image: url("../img/rastr/contacts__map-m.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 .contacts__pin {
   position: absolute;
-  top: 177px;
-  left: 135px;
+  top: 170px;
+  left: 185px;
 }
 
 // Tablet version
 @media (min-width: $tablet-width) {
   .contacts {
-    width: 768px;
     &--bgc {
       background-color: $lightGrey;
     }
   }
   .contacts__container {
     justify-content: space-between;
-    width: 708px;
+    width: 92.1%; //708px
     padding-top: 70px;
     padding-bottom: 70px;
   }
   .contacts__invite {
-    padding-left: 40px;
+    width: 160px;
+    padding-left: 5.6%; //40px
     font-size: 20px;
     line-height: 25px;
   }
   .contacts__address {
     width: 160px;
-    padding-right: 40px;
+    padding-right: 5.6%; //40px
     font-size: 16px;
     line-height: 20px;
     text-align: right;
@@ -78,14 +80,14 @@
     padding-top: 20px;
   }
   .contacts__map {
-    height: 397px;
+    height: 534px;
     background-image: url("../img/rastr/contacts__map-t.jpg");
   }
   .contacts__pin {
     width: 113px;
     height: 106px;
-    top: 155px;
-    left: 345px;
+    top: 225px;
+    left: 475px;
   }
 }
 
@@ -113,6 +115,7 @@
   }
   .contacts__address {
     padding-right: 75px;
+    text-align: left;
   }
   .contacts__map {
     width: 1440px;

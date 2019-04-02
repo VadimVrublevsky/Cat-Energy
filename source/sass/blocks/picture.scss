@@ -4,10 +4,13 @@
   position: relative;
 }
 .picture__before {
+  display: none; // временно
   position: absolute;
 }
 .picture__after {
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .picture__slider {
   margin-top: 40px;
@@ -28,7 +31,7 @@
   }
 }
 .picture__bar {
-  width: 84px;
+  width: 30%; //84px
 }
 
 // Tablet version
@@ -63,7 +66,7 @@
     }
   }
   .picture__bar {
-    width: 427px;
+    width: 60.3%;
   }
 }
 // Desktop version

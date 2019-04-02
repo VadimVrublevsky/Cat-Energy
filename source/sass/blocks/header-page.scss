@@ -1,25 +1,23 @@
 @import "variables.scss";
 // Mobile version
 .header-page {
-  width: 320px;
-
-  background-color: $white;
-  color: $almostBlack;
-
-  font-size: 20px;
-  font-weight: medium;
-  line-height: 20px;
+  max-width: 425px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header-page__container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+
+  padding-top: 5.3%;
+  padding-bottom: 5.3%;
+
   border-bottom: 1px solid $grey;
 }
 .header-page__logo {
   margin: 0;
-  padding: 0;
 }
 .header-page__link {
 
@@ -28,8 +26,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   &--face {
-    margin-top: 12px;
-    margin-bottom: 17px;
+
   }
   &--text {
 
@@ -52,14 +49,14 @@
 // Tablet version
 @media (min-width: $tablet-width) {
   .header-page {
-    width: 768px;
     display: flex;
     justify-content: space-between;
+    max-width: 1024px;
     padding-top: 20px;
   }
   .header-page__container {
     justify-content: flex-start;
-    padding: 0 30px;
+    padding: 0 4%;
     border: none;
   }
   .header-page__logo {
@@ -81,18 +78,17 @@
     }
   }
   .header-page__nav {
-    margin-right: 30px;
+    margin-right: 4%;
   }
   .header-page__toogle {
     display: none;
   }
 }
-
 // Desktop version
 @media (min-width: $desktop-width) {
   .header-page {
     padding-top: 40px;
-    width: 1440px;
+    max-width: 1440px;
     background-color: transparent;
   }
   .header-page__container {
