@@ -50,16 +50,20 @@
 
       <section class="product product--index-desktop">
         <div class="product__container">
-          <h2 class="product__title">Функциональное питание для котов</h2>
-          <p class="product__tagline">Занялся собой? Займись котом!</p>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/rastr/product__image-d.png">
-            <source media="(min-width: 768px)" srcset="img/rastr/product__image-t.jpg">
-            <img class="product__image" width="280" height="270" src="img/rastr/product__image-m.png">
-          </picture>
-          <form class="product__link-container" action="form.html">
-            <button class="button product__link">Подобрать программу</button>
-          </form>
+          <div class="product__container-bg">
+            <h2 class="product__title">Функциональное питание для котов</h2>
+            <p class="product__tagline">Занялся собой? Займись котом!</p>
+          </div>
+          <div class="product__container-image">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/rastr/product__image-d.png">
+              <source media="(min-width: 768px)" srcset="img/rastr/product__image-t.jpg">
+              <img class="product__image" width="280" height="270" src="img/rastr/product__image-m.png">
+            </picture>
+            <form class="product__link-container" action="form.html">
+              <button class="button product__link">Подобрать программу</button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -190,7 +194,6 @@
               <picture>
                 <img class="social-list__image social-list__image--vk" src="img/vector/social-list__vk-m.svg" width="22" height="12" alt="Мы в Вконтакте">
               </picture>
-
             </a>
           </li>
           <li class="social-list__item">
