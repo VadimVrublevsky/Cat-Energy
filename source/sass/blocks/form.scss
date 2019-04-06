@@ -7,8 +7,8 @@
   margin: 0;
   padding: 0;
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 6.2%; // 20px
+  margin-right: 6.2%; // 20px
   font-family: $oswald;
   font-size: 36px;
   line-height: 60px;
@@ -19,8 +19,8 @@
   margin: 0;
   padding: 0;
   margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 6.2%; // 20px
+  margin-right: 6.2%; // 20px
   font-family: $oswald;
   font-size: 14px;
   line-height: 18px;
@@ -32,7 +32,7 @@
   margin-top: 40px;
 }
 .form__personal-data-cat-container {
-  width: 280px;
+  width: 87.5%; // 280px
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
@@ -42,10 +42,19 @@
   display: flex;
   flex-direction: column;
 }
+.form__field {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: no-wrap;
+  &:first-child {
+    margin-top: 0;
+  }
+}
 .form__label {
   margin: 0;
   padding: 0;
-  margin-top: 15px;
   font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
@@ -55,17 +64,9 @@
   &:first-child {
     margin-top: 0;
   }
-  &--name {
-
-  }
-  &--weight {
-
-  }
-  &--age {
-
-  }
 }
 .form__text {
+  width: 100%;
   margin: 0;
   padding: 0;
   padding: 10px;
@@ -75,21 +76,6 @@
   font-weight: normal;
   color: $darkGrey;
   text-transform: uppercase;
-  &--name {
-    width: 200px;
-  }
-  &--weight {
-    width: 182px;
-  }
-  &--age {
-    width: 147px;
-  }
-  &--email {
-    width: 193px;
-  }
-  &--phone {
-    width: 171px;
-  }
   &--left {
     margin-left: 15px;
   }
@@ -98,7 +84,7 @@
   }
 }
 .form__nutrition-program-container {
-  width: 280px;
+  width: 87.5%; // 280px
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid $grey;
@@ -116,8 +102,8 @@
   margin: 0;
   padding: 0;
   margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 6.2%; // 20px
+  margin-right: 6.2%; // 20px
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
@@ -125,7 +111,7 @@
   color: $almostBlack;
 }
 .form__personal-data-owner-container {
-  width: 280px;
+  width: 87.5%; // 280px
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -135,7 +121,7 @@
   flex-direction: column;
 }
 .form__comments-container {
-  width: 280px;
+  width: 87.5%; // 280px
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -150,7 +136,7 @@
   padding: 10px;
 }
 .form__additionally-container {
-  width: 280px;
+  width: 87.5%; // 280px
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -163,7 +149,7 @@
 
 }
 .form__submit-container {
-  width: 280px;
+  width: 87.5%; // 280px
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -172,6 +158,7 @@
 
 }
 .form__submit-button {
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
 }
@@ -194,14 +181,14 @@
   }
   .form__title {
     margin-top: 60px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 3.9%; // 30px
+    margin-right: 3.9%; // 30px
     font-size: 60px;
   }
   .form__annotation {
     margin-top: 50px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 9.1%; // 70px
+    margin-right: 9.1%; // 70px
     font-size: 20px;
     line-height: 30px;
   }
@@ -209,53 +196,32 @@
     margin-top: 70px;
   }
   .form__personal-data-cat-container {
-    width: 708px;
+    width: 92.1%; // 708px
     padding-bottom: 0;
     border-bottom: none;
   }
   .form__personal-data-cat {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5.6%; // 40px
+    margin-right: 5.6%; // 40px
+  }
+  .form__field {
+    &--checkbox {
+      width: 40.1%; // 284px
+      margin-top: 0;
+    }
   }
   .form__label {
     font-size: 20px;
     line-height: 20px;
-    &:last-child {
-
-    }
-    &--name {
-
-    }
-    &--weight {
-
-    }
-    &--age {
-
-    }
     &--checkbox {
-      width: 284px;
       margin: 0;
       padding: 20px 0px;
     }
   }
   .form__text {
+    width: 100%;
     font-size: 20px;
     line-height: 20px;
-    &--name {
-      width: 200px;
-    }
-    &--weight {
-      width: 182px;
-    }
-    &--age {
-      width: 147px;
-    }
-    &--email {
-      width: 193px;
-    }
-    &--phone {
-      width: 171px;
-    }
     &--left {
 
     }
@@ -264,13 +230,13 @@
     }
   }
   .form__nutrition-program-container {
-    width: 708px;
+    width: 92.1%; // 708px
     margin-top: 70px;
     border-bottom: none;
   }
   .form__nutrition-program {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5.6%; // 40px
+    margin-right: 5.6%; // 40px
     padding-top: 45px;
     padding-bottom: 45px;
     padding-left: 28px;
@@ -281,63 +247,63 @@
   }
   .form__subtitle {
     margin-top: 80px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 9.1%; // 70px
+    margin-right: 9.1%; // 70px
     font-size: 36px;
     line-height: 36px;
   }
   .form__personal-data-owner-container {
-    width: 708px;
+    width: 92.1%; // 708px
     margin-top: 80px;
   }
   .form__personal-data-owner {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5.6%; // 40px
+    margin-right: 5.6%; // 40px
   }
   .form__comments-container {
-    width: 708px;
+    width: 92.1%; // 708px
     margin-top: 80px;
   }
   .form__comments {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 5.6%; // 40px
+    margin-left: 5.6%; // 40px
   }
   .form__textarea {
     height: 170px;
     width: 100%;
   }
   .form__additionally-container {
-    width: 708px;
+    width: 92.1%; // 708px
     margin-top: 50px;
   }
   .form__additionally {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 5.6%; // 40px
+    margin-left: 5.6%; // 40px
   }
   .form__checkbox {
 
   }
   .form__submit-container {
-    width: 708px;
+    width: 92.1%; // 708px
     margin-top: 40px;
   }
   .form__submit {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5.6%; // 40px
+    margin-right: 5.6%; // 40px
   }
   .form__submit-button {
-    width: 283px;
+    width: 40%; // 283px
     height: 50px;
     font-size: 20px;
   }
   .form__text-required {
-    width: 283px;
+    width: 40%; // 283px
     margin-top: 0;
     font-size: 16px;
     text-align: left;
@@ -378,20 +344,7 @@
     margin-left: 0;
     margin-right: 0;
   }
-  .form__label {
-
-    &:last-child {
-
-    }
-    &--name {
-
-    }
-    &--weight {
-
-    }
-    &--age {
-
-    }
+  .form__field {
     &--checkbox {
       width: 245px;
     }
@@ -400,23 +353,11 @@
       margin-top: 0;
     }
   }
+  .form__label {
+
+  }
   .form__text {
 
-    &--name {
-      width: 200px;
-    }
-    &--weight {
-      width: 182px;
-    }
-    &--age {
-      width: 147px;
-    }
-    &--email {
-      width: 193px;
-    }
-    &--phone {
-      width: 171px;
-    }
     &--left {
 
     }
