@@ -55,63 +55,77 @@
           <div class="form__program-container">
             <div class="form__personal-data-cat-container">
               <div class="form__personal-data-cat">
-                <label class="form__label form__label--name">Имя:<sup>*</sup>
-                  <input class="form__text form__text--name form__text--left" type="text" name="Имя" placeholder="Барсик" required>
-                </label>
-                <label class="form__label form__label--weight">Вес(КГ):<sup>*</sup>
-                  <input class="form__text form__text--weight form__text--left"  type="text" name="Вес" placeholder="7" required pattern="[0-9]{1,2}">
-                </label>
-                <label class="form__label form__label--age">Возраст(лет):
-                  <input class="form__text form__text--age form__text--left" type="text" name="Возраст" placeholder="7" pattern="[0-9]{1,2}">
-                </label>
+                <div class="form__field">
+                  <label class="form__label" for="name" >Имя:<sup>*</sup></label>
+                  <input class="form__text form__text--left" id="name" type="text" name="Имя" placeholder="Барсик" required>
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="weight">Вес(КГ):<sup>*</sup></label>
+                  <input class="form__text form__text--left" id="weight" type="text" name="Вес" placeholder="7" required pattern="[0-9]{1,2}">
+                </div>
+                <div class="form__field">
+                  <label class="form__label" for="age">Возраст(лет):</label>
+                  <input class="form__text form__text--left" id="age" type="text" name="Возраст" placeholder="7" pattern="[0-9]{1,2}">
+                </div>
               </div>
             </div>
             <div class="form__nutrition-program-container">
               <div class="form__nutrition-program">
-                <label class="form__label">
-                  <input class="form__radio form__text--right" type="radio" name="Программа" value="Похудение" checked>Похудение
-                </label>
-                <label class="form__label">
-                  <input class="form__radio form__text--right" type="radio" name="Программа" value="Набор массы">Набор массы
-                </label>
-                <label class="form__label">
-                  <input class="form__radio form__text--right" type="radio" name="Программа" value="Нужен совет">Не знаю (нужен ваш совет)
-                </label>
+                <div class="form__field">
+                  <input class="form__radio form__text--right" id="slim" type="radio" name="Программа" value="Похудение" checked>
+                  <label class="form__label" for="slim">Похудение</label>
+                </div>
+                <div class="form__field">
+                  <input class="form__radio form__text--right" id="pro" type="radio" name="Программа" value="Набор массы">
+                  <label class="form__label" for="pro">Набор массы</label>
+                </div>
+                <div class="form__field">
+                  <input class="form__radio form__text--right" id="advice" type="radio" name="Программа" value="Нужен совет">
+                  <label class="form__label" for="advice">Не знаю (нужен ваш совет)</label>
+                </div>
               </div>
             </div>
           </div>
           <h3 class="form__subtitle">Контактные данные (владельца кота)</h3>
           <div class="form__personal-data-owner-container">
             <div class="form__personal-data-owner">
-              <label class="form__label form__label--data-owner">email:<sup>*</sup>
-                <input class="form__text form__text--email form__text--left" type="email" name="Е-мейл" placeholder="Kuklachev@gmail.com" required>
-              </label>
-              <label class="form__label form__label--data-owner">Телефон:<sup>*</sup>
-                <input class="form__text form__text--phone form__text--left" type="text" name="Номер телефона" placeholder="8(960)900-60-90" required>
-              </label>
+              <div class="form__field form__field--data-owner">
+                <label class="form__label" for="email">email:<sup>*</sup></label>
+                <input class="form__text form__text--left" id="email" type="email" name="Е-мейл" placeholder="Kuklachev@gmail.com" required>
+              </div>
+              <div class="form__field form__field--data-owner">
+                <label class="form__label " for="phone">Телефон:<sup>*</sup></label>
+                <input class="form__text form__text--left" id="phone" type="text" name="Номер телефона" placeholder="8(960)900-60-90" required>
+              </div>
             </div>
           </div>
           <h3 class="form__subtitle">Комментарий</h3>
           <div class="form__comments-container">
             <div class="form__comments">
-              <textarea class="form__textarea" name="Комментарий" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <div class="form__field">
+                <textarea class="form__textarea" name="Комментарий" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
             </div>
           </div>
           <h3 class="form__subtitle">Дополнительно</h3>
           <div class="form__additionally-container">
             <div class="form__additionally">
-              <label class="form__label form__label--checkbox">
-                <input class="form__checkbox form__text--right" type="checkbox"name="Сахарозаменитель">Сахарозаменитель
-              </label>
-              <label class="form__label form__label--checkbox">
-                <input class="form__checkbox form__text--right" type="checkbox" name="Питьевая вода">Питьевая вода
-              </label>
-              <label class="form__label form__label--checkbox">
-                <input class="form__checkbox form__text--right" type="checkbox" name="Молоко">Молоко
-              </label>
-              <label class="form__label form__label--checkbox">
-                <input class="form__checkbox form__text--right" type="checkbox"name="Витамины">Витамины
-              </label>
+              <div class="form__field form__field--checkbox">
+                <input class="form__checkbox form__text--right" type="checkbox"name="Сахарозаменитель">
+                <label class="form__label form__label--checkbox">Сахарозаменитель</label>
+              </div>
+              <div class="form__field form__field--checkbox">
+                <input class="form__checkbox form__text--right" type="checkbox" name="Питьевая вода">
+                <label class="form__label form__label--checkbox">Питьевая вода</label>
+              </div>
+              <div class="form__field form__field--checkbox">
+                <input class="form__checkbox form__text--right" type="checkbox" name="Молоко">
+                <label class="form__label form__label--checkbox">Молоко</label>
+              </div>
+              <div class="form__field form__field--checkbox">
+                <input class="form__checkbox form__text--right" type="checkbox"name="Витамины">
+                <label class="form__label form__label--checkbox">Витамины</label>
+              </div>
             </div>
           </div>
           <div class="form__submit-container">
