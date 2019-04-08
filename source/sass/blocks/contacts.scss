@@ -37,16 +37,20 @@
 }
 .contacts__map {
   position: relative;
-  width: 100%;
   min-height: 362px;
-  background-image: url("../img/rastr/contacts__map-m.jpg");
+  background-image: url('../img/rastr/contacts__map-m.jpg');
+  background-size: 420px 362px;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-position: 50% 0;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/rastr/contacts__map-m@2x.jpg');
+    background-size: 420px 362px;
+  }
 }
 .contacts__pin {
   position: absolute;
-  top: 170px;
-  left: 185px;
+  top: 190px;
+  left: 38%;
 }
 
 // Tablet version
@@ -80,12 +84,17 @@
     padding-top: 20px;
   }
   .contacts__map {
-    height: 534px;
-    background-image: url("../img/rastr/contacts__map-t.jpg");
+    height: 398px;
+    background-image: url('../img/rastr/contacts__map-t.jpg');
+    background-size: 1024px 398px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/rastr/contacts__map-t@2x.jpg');
+    background-size: 1024px 398px;
+    }
   }
   .contacts__pin {
-    top: 225px;
-    left: 475px;
+    top: 150px;
+    left: 42%;
   }
 }
 
@@ -95,8 +104,12 @@
     position: relative;
     width: 1440px;
     height: 400px;
-    background-image: url("../img/rastr/contacts__map-d.jpg");
+    background-image: url('../img/rastr/contacts__map-d.jpg');
     border: 1px solid transparent;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/rastr/contacts__map-d@2x.jpg');
+      background-size: 1440px 400px;
+    }
   }
   .contacts__container {
     box-sizing: border-box;

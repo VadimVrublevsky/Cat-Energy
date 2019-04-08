@@ -30,10 +30,14 @@
   width: 100%; // 280px
   height: 290px;
   text-align: center;
-  background-image: url("../img/rastr/sub-catalog__bg-m.jpg");
+  background-image: url('../img/rastr/sub-catalog__bg-m.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/rastr/sub-catalog__bg-m@2x.jpg');
+    background-size: cover;
+  }
 }
 .sub-catalog__offer-image {
   margin-top: 65px;
@@ -87,6 +91,9 @@
     margin-top: 70px;
     margin-bottom: 70px;
     background-image: url("../img/rastr/sub-catalog__bg-t.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/rastr/sub-catalog__bg-t@2x.jpg');
+    }
   }
   .sub-catalog__offer-image {
     margin-top: 0;
@@ -121,6 +128,9 @@
     margin: 0;
     padding: 0;
     background-image: url("../img/rastr/sub-catalog__bg-d.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/rastr/sub-catalog__bg-d@2x.jpg');
+    }
   }
   .sub-catalog__offer-image {
 

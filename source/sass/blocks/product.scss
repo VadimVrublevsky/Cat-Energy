@@ -11,6 +11,10 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/rastr/product__bg-m@2x.jpg');
+    background-size: cover;
+  }
 }
 .product__container-image {
   width: 87.5%;
@@ -122,10 +126,16 @@
 @media (min-width: $desktop-width) {
   .product {
     width: 1440px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    margin-top: -110px;
+    border: 1px solid transparent;
     &--index-desktop {
-      background: url('../img/rastr/product__bg-d.jpg') no-repeat 100% 0;
-      margin-top: -110px;
-      border: 1px solid transparent;
+      background-image: url('../img/rastr/product__bg-d.jpg');
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../img/rastr/product__bg-d@2x.jpg');
+        background-size: 720px auto;
+      }
     }
   }
   .product__container {

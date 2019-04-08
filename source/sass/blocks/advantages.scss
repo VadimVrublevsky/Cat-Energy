@@ -80,19 +80,35 @@
     &--first {
       background-image: url('../img/rastr/advantages__1-t|d.png');
       background-position: 50% 0;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../img/rastr/advantages__1-t|d@2x.png');
+        background-size: 71px auto;
+      }
     }
     &--second {
       background-image: url('../img/rastr/advantages__2-t|d.png');
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../img/rastr/advantages__2-t|d@2x.png');
+        background-size: 114px auto;
+      }
     }
     &--third {
       background-image: url('../img/rastr/advantages__3-t|d.png');
       margin-top: 90px;
       margin-bottom: 60px;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../img/rastr/advantages__3-t|d@2x.png');
+        background-size: 113px auto;
+      }
     }
     &--fourth {
       background-image: url('../img/rastr/advantages__4-t|d.png');
       margin-top: 90px;
       margin-bottom: 60px;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../img/rastr/advantages__4-t|d@2x.png');
+        background-size: 121px auto;
+      }
     }
   }
   .advantages__picture-container {
