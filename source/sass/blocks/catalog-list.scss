@@ -22,8 +22,6 @@
   }
 }
 .catalog-list__image {
-  width: 100%;
-  height: 100%;
   &--show-all {
     margin-top: 26px;
     width: 30px;
@@ -140,14 +138,10 @@
     margin-right: auto;
     margin-left: auto;
     &--small {
-      width: 161px;
-      height: 172px;
       top: -54px;
       left: 44px;
     }
     &--big {
-      width: 195px;
-      height: 208px;
       top: -90px;
       left: 27px;
     }

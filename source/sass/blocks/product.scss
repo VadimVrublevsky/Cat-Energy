@@ -102,8 +102,6 @@
   .product__image {
     margin: 0;
     position: absolute;
-    width: 708px;
-    height: 608px;
     z-index: -1;
     background-size: contain;
   }
@@ -155,8 +153,6 @@
     color: $almostBlack;
   }
   .product__image {
-    width: 552px;
-    height: 499px;
     top: -270px;
     left: 450px;
     z-index: 0;

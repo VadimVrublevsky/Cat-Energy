@@ -144,7 +144,11 @@
           <p class="contacts__address">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="contacts__map">
-          <img class="contacts__pin" src="img/rastr/contacts__pin.png" width="55" height="53" alt="Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/rastr/contacts__pin-d.png">
+            <source media="(min-width: 768px)" srcset="img/rastr/contacts__pin-t.png">
+            <img class="contacts__pin" src="img/rastr/contacts__pin.png" alt="Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
         </div>
       </section>
 
