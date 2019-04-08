@@ -56,9 +56,17 @@
           </div>
           <div class="product__container-image">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/rastr/product__image-d.png">
-              <source media="(min-width: 768px)" srcset="img/rastr/product__image-t.jpg">
-              <img class="product__image" src="img/rastr/product__image-m.png">
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/rastr/product__image-d@2x.png 2x,
+                        img/rastr/product__image-d.png 1x">
+              <source
+                media="(min-width: 768px)"
+                srcset="img/rastr/product__image-t@2x.jpg 2x,
+                        img/rastr/product__image-t.jpg 1x">
+              <img class="product__image"
+                srcset="img/rastr/product__image-m@2x.png 2x,
+                        img/rastr/product__image-m.png 1x">
             </picture>
             <form class="product__link-container" action="form.html">
               <button class="button product__link">Подобрать программу</button>
@@ -94,7 +102,10 @@
           <ul class="advantages__list">
             <li class="advantages__items-container advantages__items-container--first">
               <div class="advantages__picture-container">
-                <img class="advantages__picture" src="img/rastr/advantages__usefulmaterial-m.png" alt="Полезные вещества">
+                <img class="advantages__picture"
+                  srcset="img/rastr/advantages__usefulmaterial-m|t|d@2x.png 2x,
+                          img/rastr/advantages__usefulmaterial-m|t|d.png 1x"
+                  alt="Полезные вещества">
               </div>
               <p class="advantages__text">
                 Функциональное питание содержит только полезные питательные вещества.
@@ -102,7 +113,10 @@
             </li>
             <li class="advantages__items-container advantages__items-container--second">
               <div class="advantages__picture-container">
-                <img class="advantages__picture" src="img/rastr/advantages__powder-m.png" alt="Порошок">
+                <img class="advantages__picture"
+                  srcset="img/rastr/advantages__powder-m|t|d@2x.png 2x,
+                          img/rastr/advantages__powder-m|t|d.png 1x"
+                  alt="Порошок">
               </div>
               <p class="advantages__text">
                 Выпускается в виде порошка, который нужно залить кипятком и готово.
@@ -110,7 +124,10 @@
             </li>
             <li class="advantages__items-container advantages__items-container--third">
               <div class="advantages__picture-container">
-                <img class="advantages__picture" src="img/rastr/advantages__foodIntake-m.png" alt="Прием пищи">
+                <img class="advantages__picture"
+                  srcset="img/rastr/advantages__foodIntake-m|t|d@2x.png 2x,
+                          img/rastr/advantages__foodIntake-m|t|d.png 1x"
+                  alt="Прием пищи">
               </div>
               <p class="advantages__text">
                 Замените один-два приёма обычной еды на наше функциональное питание.
@@ -118,7 +135,10 @@
             </li>
             <li class="advantages__items-container advantages__items-container--fourth">
               <div class="advantages__picture-container">
-                <img class="advantages__picture" src="img/rastr/advantages__result-m.png" alt="Результат">
+                <img class="advantages__picture"
+                  srcset="img/rastr/advantages__result-m|t|d@2x.png 2x,
+                          img/rastr/advantages__result-m|t|d.png 1x"
+                  alt="Результат">
               </div>
               <p class="advantages__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
@@ -149,12 +169,24 @@
           </div>
           <div class="example__picture picture">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/rastr/picture__before-t.png">
-              <img class="picture__before" src="img/rastr/picture__before.png" alt="Фотография до">
+              <source
+                media="(min-width: 768px)"
+                srcset="img/rastr/picture__before-t|d@2x.png 2x,
+                        img/rastr/picture__before-t|d.png 1x">
+              <img class="picture__before"
+                srcset="img/rastr/picture__before-m@2x.png 2x,
+                        img/rastr/picture__before-m.png 1x"
+                alt="Фотография до">
             </picture>
             <picture>
-              <source media="(min-width: 768px)" srcset="img/rastr/picture__after-t.png">
-              <img class="picture__after" src="img/rastr/picture__after.png" alt="Фотография после">
+              <source
+                media="(min-width: 768px)"
+                srcset="img/rastr/picture__after-t|d@2x.png 2x,
+                        img/rastr/picture__after-t|d.png 1x">
+              <img class="picture__after"
+                srcset="img/rastr/picture__after-m@2x.png 2x,
+                        img/rastr/picture__after-m.png 1x"
+                alt="Фотография после">
             </picture>
             <div class="picture__slider">
               <span class="picture__slider-status picture__slider-status--before">Было</span>
@@ -173,9 +205,14 @@
         </div>
         <div class="contacts__map">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/rastr/contacts__pin-d.png">
-            <source media="(min-width: 768px)" srcset="img/rastr/contacts__pin-t.png">
-            <img class="contacts__pin" src="img/rastr/contacts__pin.png" alt="Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/rastr/contacts__pin-t|d@2x.png 2x,
+                      img/rastr/contacts__pin-t|d.png 1x">
+            <img class="contacts__pin"
+              srcset="img/rastr/contacts__pin-m@2x.png 2x,
+                      img/rastr/contacts__pin-m.png 1x"
+              alt="Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
         </div>
       </section>
