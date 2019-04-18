@@ -1,6 +1,17 @@
 @import "variables.scss";
 // Mobile version
 .header-nav {
+
+}
+// JS классы
+.header-nav--closed {
+  display: none;
+}
+.header-nav--opened {
+  display: block;
+}
+
+.header-nav--nojs {
   display: block;
 }
 .header-nav__list {
@@ -30,6 +41,13 @@
 .header-nav__link {
   color: $almostBlack;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 // Tablet version

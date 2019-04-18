@@ -10,19 +10,26 @@
   width: 87.5%; // 280px
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 10px;
 }
 .footer-page__logo {
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
   border-bottom: 1px solid $grey;
   text-align: center;
 }
 .footer-page__link {
-
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.4;
+  }
 }
 .footer-page__image {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
 }
 .footer-page__social {
   margin: 0;
@@ -48,6 +55,7 @@
   }
   .footer-page__logo {
     width: 162px;
+    padding-bottom: 0;
     border-bottom: none;
   }
   .footer-page__link {

@@ -17,6 +17,13 @@
   font-weight: normal;
   text-decoration: none;
   color: $darkGrey;
+  &:hover .html-academy-list__logo,
+  &:focus .html-academy-list__logo {
+    fill: $green;
+  }
+  &:active {
+    opacity: 0.4;
+  }
 }
 .html-academy-list__logo {
 

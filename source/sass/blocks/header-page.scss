@@ -11,16 +11,23 @@
   justify-content: space-around;
   align-items: center;
 
-  padding-top: 5.3%;
-  padding-bottom: 5.3%;
+  padding-top: 2.3%;
+  padding-bottom: 2.3%;
 
   border-bottom: 1px solid $grey;
 }
 .header-page__logo {
   margin: 0;
+  margin-top: 5px;
 }
 .header-page__link {
-
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.4;
+  }
 }
 .header-page__image {
   background-position: top center;
@@ -60,7 +67,10 @@
     border: none;
   }
   .header-page__logo {
-
+    margin-top: 0;
+    &--text {
+      display: none;
+    }
   }
   .header-page__link {
 

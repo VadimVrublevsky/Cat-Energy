@@ -52,10 +52,13 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .button {
   width: 280px;
   height: 40px;
-  background-color: $green;
   border: none;
   font-family: $oswald;
   font-size: 14px;
@@ -63,8 +66,29 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
-  color: $white;
   cursor: pointer;
+  &--green {
+    color: $white;
+    background-color: $green;
+    &:hover,
+    &:focus {
+      background-color: $greenHoverButton;
+    }
+    &:active {
+      color: $greenActiveButton;
+    }
+  }
+  &--grey {
+    color: $darkGrey;
+    background-color: $lightGrey;
+    &:hover,
+    &:focus {
+      background-color: $greyHoverButton;
+    }
+    &:active {
+      color: $greyActiveButton;
+    }
+  }
 }
 textarea[placeholder] {
   font-family: $oswald;
@@ -73,4 +97,17 @@ textarea[placeholder] {
   font-weight: lighter;
   color: $darkGrey;
   text-transform: uppercase;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  &:hover {
+    outline: 2px solid $mediumGrey;
+  }
+  &:focus {
+    outline: 2px solid $mediumBlack;
+  }
+}
+input[type="email"]:focus .form__icon-mail{
+  fill: $green;
 }
