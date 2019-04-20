@@ -2,54 +2,112 @@
           // Импорт плагинов
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+var plumber = require("gulp-plumber");
+var postcss = require("gulp-postcss");
+var autoprefixer = require("autoprefixer");
+var minify = require("gulp-csso");
+var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
+var del = require("del");
 var watch = require("gulp-watch");
-var prefixer = require("gulp-autoprefixer");
-// var uglify = require("gulp-uglify");
-// var sourcemaps = require("gulp-sourcemaps");
-// var rigger = require("gulp-rigger");
-// var cssmin = require("gulp-clean-css");
-// var imagemin = require("gulp-imagemin");
-// var pngquant = require("imagemin-pngquant");
-var browserSync = require("browser-sync");
-var reload = browserSync.reload;
+var server = require("browser-sync").create();
 
 var path = {
-  build: { // Местонахождение готовых файлов (после сборки)
-    html: 'build/',
-    js: 'build/js/',
-    css: 'build/css/',
-    img: 'build/img/',
-    fonts: 'build/fonts/'
-  },
   source: { // Местонахождение исходных файлов
     html: 'source/*.html',
-    js: 'source/js/main.js',
+    js: 'source/js/*.js',
     sass: 'source/sass/style.scss',
     css: 'source/css/',
-    img: 'source/img/**/*.*',
-    fonts: 'source/fonts/**/*.*'
+    img: 'source/img/**/*.{png,jpg,svg}',
+    imgR: 'source/img/**/*.{png,jpg}',
+    imgVS: 'source/img/vector/*-icon.svg',
+    fonts: 'source/fonts/**/*.ttf'
   },
   watch: { // Файлы, за изменениями которых мы будем наблюдать
-    html: 'source/**/*.html',
+    html: 'source/*.html',
     js: 'source/js/**/*.js',
     sass: 'source/sass/**/*.scss',
     css: 'source/css/style/**/*.css',
     img: 'source/img/**/*.*',
     fonts: 'source/fonts/**/*.*'
   },
-  clean: './build'
 };
 
-gulp.task('style:build', function() {
+gulp.task("style", function() {
+  var plugins = [
+    autoprefixer({browsers: ['last 2 version']}),
+  ];
   return gulp.src(path.source.sass)
+    .pipe(plumber())
     .pipe(sass())
-    .pipe(prefixer())
-    .pipe(gulp.dest(path.source.css))
-    .pipe(gulp.dest(path.build.css))
-    .pipe(reload({stream: true}));
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest("build/css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+gulp.task("sprite", function() {
+  return gulp.src(path.source.imgVS)
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
+gulp.task("html", function() {
+  return gulp.src(path.source.html)
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+});
+gulp.task("images", function() {
+  return gulp.src(path.source.img)
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest(path.source.img));
+});
+gulp.task("webp", function() {
+  return gulp.src(path.source.imgR)
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest(path.source.img));
 });
 
-gulp.task('watch', function() {
-  gulp.watch([path.watch.sass], gulp.series('style:build'));
+gulp.task("serve", function() {
+  server.init({
+    server: "build/"
+  });
+  gulp.watch([path.watch.sass], gulp.series("style"));
+  gulp.watch([path.watch.html], gulp.series("html"))
+  .on("change", server.reload);
 });
 
+gulp.task("copy", function() {
+  return gulp.src([
+    path.source.fonts,
+    path.source.img,
+    path.source.js
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+});
+gulp.task("clean", function() {
+  return del("build");
+});
+gulp.task("build", gulp.series(
+  "clean",
+  "copy",
+  "style",
+  "sprite",
+  "html",
+  )
+);
