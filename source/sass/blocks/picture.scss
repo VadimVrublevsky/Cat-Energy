@@ -112,6 +112,7 @@ input[type="range"]::-ms-track {
 // Tablet version
 @media (min-width: $tablet-width) {
   .picture {
+    margin-top: 80px;
     padding-bottom: 70px;
     background-color: $lightGrey;
   }

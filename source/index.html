@@ -214,6 +214,21 @@
           <div class="product__container-image">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1440px")
+                srcset="img/rastr/product__image-d@2x.webp 2x,
+                        img/rastr/product__image-d.webp 1x">
+              <source
+                type="image/webp"
+                media="(min-width: 768px")
+                srcset="img/rastr/product__image-t@2x.webp 2x,
+                        img/rastr/product__image-t.webp 1x">
+              <source
+                type="image/webp"
+                srcset="img/rastr/product__image-m@2x.webp 2x,
+                        img/rastr/product__image-m.webp 1x">
+
+              <source
                 media="(min-width: 1440px)"
                 srcset="img/rastr/product__image-d@2x.png 2x,
                         img/rastr/product__image-d.png 1x">
@@ -269,10 +284,17 @@
           <ul class="advantages__list">
             <li class="advantages__items-container advantages__items-container--first">
               <div class="advantages__picture-container">
-                <img class="advantages__picture"
+                <picture>
+                  <source type="image/webp"
+                  srcset="img/rastr/advantages__usefulmaterial-m|t|d.webp 2x,
+                          img/rastr/advantages__usefulmaterial-m|t|d.webp 1x">
+
+                  <img class="advantages__picture" width="26" height="29"
                   srcset="img/rastr/advantages__usefulmaterial-m|t|d@2x.png 2x,
                           img/rastr/advantages__usefulmaterial-m|t|d.png 1x"
                   alt="Полезные вещества">
+                </picture>
+
               </div>
               <p class="advantages__text">
                 Функциональное питание содержит только полезные питательные вещества.
@@ -280,10 +302,17 @@
             </li>
             <li class="advantages__items-container advantages__items-container--second">
               <div class="advantages__picture-container">
-                <img class="advantages__picture"
+                <picture>
+                  <source type="image/webp"
+                  srcset="img/rastr/advantages__powder-m|t|d.webp 2x,
+                          img/rastr/advantages__powder-m|t|d.webp 1x">
+
+                  <img class="advantages__picture" width="29" height="31"
                   srcset="img/rastr/advantages__powder-m|t|d@2x.png 2x,
                           img/rastr/advantages__powder-m|t|d.png 1x"
                   alt="Порошок">
+                </picture>
+
               </div>
               <p class="advantages__text">
                 Выпускается в виде порошка, который нужно залить кипятком и готово.
@@ -291,10 +320,16 @@
             </li>
             <li class="advantages__items-container advantages__items-container--third">
               <div class="advantages__picture-container">
-                <img class="advantages__picture"
+                <picture>
+                  <source type="image/webp"
+                  srcset="img/rastr/advantages__foodIntake-m|t|d.webp 2x,
+                          img/rastr/advantages__foodIntake-m|t|d.webp 1x">
+
+                  <img class="advantages__picture" width="23" height="30"
                   srcset="img/rastr/advantages__foodIntake-m|t|d@2x.png 2x,
                           img/rastr/advantages__foodIntake-m|t|d.png 1x"
                   alt="Прием пищи">
+                </picture>
               </div>
               <p class="advantages__text">
                 Замените один-два приёма обычной еды на наше функциональное питание.
@@ -302,10 +337,16 @@
             </li>
             <li class="advantages__items-container advantages__items-container--fourth">
               <div class="advantages__picture-container">
-                <img class="advantages__picture"
+                <picture>
+                  <source type="image/webp"
+                  srcset="img/rastr/advantages__result-m|t|d.webp 2x,
+                          img/rastr/advantages__result-m|t|d.webp 1x">
+
+                  <img class="advantages__picture" width="26" height="31"
                   srcset="img/rastr/advantages__result-m|t|d@2x.png 2x,
                           img/rastr/advantages__result-m|t|d.png 1x"
                   alt="Результат">
+                </picture>
               </div>
               <p class="advantages__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
@@ -361,14 +402,22 @@
         </div>
         <div class="contacts__map">
           <picture>
+            <source type="image/webp"
+            media="(min-width: 768px)"
+            srcset="img/rastr/contacts__pin-t|d@2x.webp 2x,
+                    img/rastr/contacts__pin-t|d.webp 1x">
+            <source type="image/webp"
+            srcset="img/rastr/contacts__pin-m@2x.webp 2x,
+                    img/rastr/contacts__pin-m.webp 1x">
+
             <source
-              media="(min-width: 768px)"
-              srcset="img/rastr/contacts__pin-t|d@2x.png 2x,
-                      img/rastr/contacts__pin-t|d.png 1x">
+            media="(min-width: 768px)"
+            srcset="img/rastr/contacts__pin-t|d@2x.png 2x,
+                    img/rastr/contacts__pin-t|d.png 1x">
             <img class="contacts__pin"
-              srcset="img/rastr/contacts__pin-m@2x.png 2x,
-                      img/rastr/contacts__pin-m.png 1x"
-              alt="Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            srcset="img/rastr/contacts__pin-m@2x.png 2x,
+                    img/rastr/contacts__pin-m.png 1x"
+            alt="Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
         </div>
       </section>
