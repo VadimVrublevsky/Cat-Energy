@@ -193,8 +193,8 @@
   }
   .catalog-list__button {
     width: 77.1%; // 250px
-    margin-left: 11.4%; // 37px
     margin-bottom: 40px;
+    margin-left: 11.4%; // 37px
     &--show-all {
       margin-left: 0px;
     }
@@ -250,9 +250,10 @@
     }
   }
   .catalog-list__button {
-    width: 169px;
+    width: 168px;
+    margin-left: 39px;
     &--show-all {
-
+      margin-left: 0;
     }
   }
 }
