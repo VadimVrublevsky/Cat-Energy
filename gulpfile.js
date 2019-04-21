@@ -22,7 +22,7 @@ var path = {
     js: 'source/js/*.js',
     sass: 'source/sass/style.scss',
     css: 'source/css/',
-    img: 'source/img/**/*.{png,jpg,svg}',
+    img: 'source/img/**/*.{png,jpg,svg,webp}',
     imgR: 'source/img/**/*.{png,jpg}',
     imgVS: 'source/img/vector/*-icon.svg',
     fonts: 'source/fonts/**/*.ttf'
@@ -85,8 +85,8 @@ gulp.task("serve", function() {
   server.init({
     server: "build/"
   });
-  gulp.watch([path.watch.sass], gulp.series("style"));
-  gulp.watch([path.watch.html], gulp.series("html"))
+  gulp.watch([path.watch.sass], gulp.parallel("style"));
+  gulp.watch([path.watch.html], gulp.parallel("html"))
   .on("change", server.reload);
 });
 
