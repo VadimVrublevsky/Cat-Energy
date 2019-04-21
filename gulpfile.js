@@ -22,7 +22,7 @@ var path = {
     js: 'source/js/*.js',
     sass: 'source/sass/style.scss',
     css: 'source/css/',
-    img: 'source/img/**/*.{png,jpg,svg,webp}',
+    img: 'source/img/**/*.{png,jpg,svg}',
     imgR: 'source/img/**/*.{png,jpg}',
     imgVS: 'source/img/vector/*-icon.svg',
     fonts: 'source/fonts/**/*.ttf'
@@ -46,9 +46,11 @@ gulp.task("style", function() {
     .pipe(sass())
     .pipe(postcss(plugins))
     .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 gulp.task("sprite", function() {
@@ -81,14 +83,15 @@ gulp.task("webp", function() {
     .pipe(gulp.dest(path.source.img));
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", gulp.series("style", function() {
   server.init({
-    server: "build/"
+    server: "source/"
   });
-  gulp.watch([path.watch.sass], gulp.parallel("style"));
-  gulp.watch([path.watch.html], gulp.parallel("html"))
+  gulp.watch([path.watch.sass], gulp.series("style"));
+  gulp.watch([path.watch.html])
   .on("change", server.reload);
-});
+}));
+
 
 gulp.task("copy", function() {
   return gulp.src([
