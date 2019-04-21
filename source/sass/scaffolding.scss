@@ -1,32 +1,28 @@
 @font-face {
-  font-weight: lighter;
   font-family: "Oswald";
+
+  font-weight: 400;
   font-style: normal;
-  src: url("../fonts/Oswald-Light.ttf") format("ttf");
+  font-display: swap;
+
+  src: url("../fonts/Oswald-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-weight: normal;
   font-family: "Oswald";
+
+  font-weight: 500;
   font-style: normal;
-  src: url("../fonts/Oswald-Regular.ttf") format("ttf");
+  font-display: swap;
+
+  src: url("../fonts/Oswald-Medium.ttf") format("truetype");
 }
-@font-face {
-  font-weight: medium;
-  font-family: "Oswald";
-  font-style: normal;
-  src: url("../fonts/Oswald-Medium.ttf") format("ttf");
-}
-@font-face {
-  font-weight: bold;
-  font-family: "Oswald";
-  font-style: normal;
-  src: url("../fonts/Oswald-Bold.ttf") format("ttf");
-}
+
 body {
   min-width: 320px;
   padding: 0;
   margin: 0;
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: $oswald, $arial;
+  font-weight: normal;
 }
 @media (min-width: $tablet-width) {
   body {
@@ -94,7 +90,7 @@ textarea[placeholder] {
   font-family: $oswald;
   font-size: 16px;
   line-height: 18px;
-  font-weight: lighter;
+  font-weight: normal;
   color: $darkGrey;
   text-transform: uppercase;
 }
